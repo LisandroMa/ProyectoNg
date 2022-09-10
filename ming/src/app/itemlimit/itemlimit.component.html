@@ -1,0 +1,7 @@
+<form [formGroup]="fatForm" (ngSubmit)="onSubmit()">
+    <label for="minfat">Minimo contenido graso: </label>
+    <input id="minfat" type="number" min="0" max="12" formControlName="minFat">
+    <label for="maxfat">Maximo contenido graso: </label>
+    <input id="maxfat" type="number" min="0" max="12" formControlName="maxFat">
+    <button type="submit">Buscar</button>
+</form>

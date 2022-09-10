@@ -1,0 +1,10 @@
+<div>
+    <h3>ID Nº= {{itemData.ndb_no}}</h3>
+    <h3>Descripción: {{itemData.long_desc}}</h3>
+    <div>
+        <label>Cantidad de grasa: </label>
+        <input id="fatFacto" type="number" [formControl]="fatFactor">
+    </div>
+    <button type="submit" (click)="modifyClick()">Modificar Item</button>
+    <button type="submit" (click)="eraseClick()">Borrar Item</button>
+</div>

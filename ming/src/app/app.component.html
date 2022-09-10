@@ -1,0 +1,7 @@
+<h1>COMIDA GRASOSA</h1>
+<div class="gridsuperior">
+  <div>
+    <app-itemlimit (submitValue)="newSearchValue($event)"></app-itemlimit>
+  </div>
+</div>
+<app-foodlist [resultList] = "results" (eraseItem)="eraseItem($event)" (modifyItem)="modifyItem($event)" (addItem)="addItem($event)"></app-foodlist>

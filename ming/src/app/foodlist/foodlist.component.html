@@ -1,0 +1,2 @@
+<app-fooditem class="gridresultados" *ngFor="let result of resultList" [itemData] = "result" (modifyItem)="modifyItemI($event)" (eraseItem)="eraseItemI($event)"></app-fooditem>
+<app-fooditemadder (addItem)="addItemI($event)"></app-fooditemadder>

@@ -1,0 +1,17 @@
+<div>
+    <form [formGroup]="adderForm">
+        <h3>
+            <label for="ndb">ID Nº= </label>
+            <input id="ndb" type="text" formControlName="ndb_no"> 
+        </h3>
+        <h3>
+            <label for="ldesc">Descripción: </label>
+            <input id="ldesc" type="text" formControlName="long_desc">
+        </h3>
+        <h3>
+            <label for="ffactor">Cantidad de grasa: </label>
+            <input id="ffactor" type="number" formControlName="fat_factor">
+        </h3>
+        <button type="submit" (click)="addClick()">Agregar Item</button>    
+    </form>
+</div>
